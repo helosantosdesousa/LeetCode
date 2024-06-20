@@ -1,0 +1,28 @@
+class MyStack {
+private int values[];
+private int top;
+
+    public MyStack() {
+        values = new int[6];
+        top = -1;
+    }
+    
+    public void push(int x) {
+        top++;
+        values[top] = x;
+    }
+    
+    public int pop() {
+        int e = values[top];
+        top--;
+        return e;
+    }
+    
+    public int top() {
+        return values[top];
+    }
+    
+    public boolean empty() {
+        return (top==-1);
+    }
+}
